@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Alexsander Marinho | Sites de Alta Performance & Soluções Digitais</title>
+    <link rel="icon" type="image/svg+xml" href="./imgs/sm-logo.svg" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="/src/index.css" />
+    <script type="module" src="/src/main.ts"></script>
+</head>
+
+<body class="selection:bg-primary-container selection:text-on-primary-container overflow-x-hidden">
+    <!-- 1. TopNavBar -->
+    <nav
+        class="sticky top-0 z-50 flex justify-between items-center w-full px-6 md:px-60 py-4 bg-surface/5 backdrop-blur-xl border-b border-on-surface/5">
+        <div class="flex items-center gap-3">
+            <img alt="Logo Alexsander Marinho" class="h-8 object-contain" src="./imgs/logo.svg" />
+        </div>
+        <a href="https://ig.me/m/alexsander.code?text=Ola,%20tenho%20interesse%20em%20iniciar%20um%20projeto"
+            target="_blank" rel="noopener noreferrer"
+            class="inline-block bg-primary-container text-on-primary-fixed font-label-md text-label-md px-6 py-3 rounded-full hover:bg-primary transition-all duration-300 active:scale-95 font-bold text-center">
+            Solicitar Orçamento
+        </a>
+    </nav>
+    <!-- 2. Hero Section -->
+    <section
+        class="relative min-h-[80vh] flex flex-col items-center justify-center text-center px-gutter py-section-gap overflow-hidden">
+        <!-- Background Ambient Glow -->
+        <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/10 blur-[120px] rounded-full -z-10">
+        </div>
+        <div class="max-w-4xl mx-auto space-y-8">
+            <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg tracking-tight reveal">
+                Transformo Ideias em <span class="text-primary italic">Máquinas de Venda</span>
+            </h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto reveal delay-150">
+                Sites de alta performance entregues em até 48 horas. Tecnologia de ponta aliada ao design estratégico
+                para converter visitantes em clientes fiéis.
+            </p>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-4 pt-4 reveal delay-300">
+                <a href="https://ig.me/m/alexsander.code?text=Ola,%20tenho%20interesse%20em%20iniciar%20um%20projeto"
+                    target="_blank" rel="noopener noreferrer"
+                    class="inline-block bg-primary-container text-on-primary-fixed px-10 py-5 rounded-lg font-bold font-label-md text-label-md primary-glow transition-all text-center">
+                    INICIAR MEU PROJETO AGORA
+                </a>
+                <a href="#projetos"
+                    class="inline-block border border-on-surface/20 text-on-surface px-10 py-5 rounded-lg font-bold font-label-md text-label-md hover:bg-on-surface/5 transition-all text-center">
+                    VER PORTFÓLIO
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- 3. Social Proof Bar -->
+    <section class="bg-surface-container-low border-y border-on-surface/5 py-12" id="projetos">
+        <div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+            <div class="space-y-1">
+                <p class="text-primary font-display-lg text-headline-md md:text-headline-md">+50</p>
+                <p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Projetos
+                    Finalizados</p>
+            </div>
+            <div class="space-y-1">
+                <p class="text-primary font-display-lg text-headline-md md:text-headline-md">6 Anos</p>
+                <p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">De Experiência
+                </p>
+            </div>
+            <div class="space-y-1">
+                <p class="text-primary font-display-lg text-headline-md md:text-headline-md">+R$ 250k</p>
+                <p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Faturados pelos
+                    Clientes</p>
+            </div>
+        </div>
+    </section>
+    <!-- 4. Portfolio Section (Fanned Carousel) -->
+    <section class="pt-section-gap pb-0 px-gutter w-full overflow-hidden flex flex-col items-center relative"
+        id="portfolio">
+        <div class="text-center mb-12 reveal">
+            <h2 class="font-headline-md text-headline-md mb-4 text-on-surface">Projetos em Destaque</h2>
+            <p class="text-on-surface-variant max-w-xl mx-auto">Excelência técnica aplicada em soluções de mercado
+                reais.</p>
+        </div>
+
+        <!-- Stack Container -->
+        <div
+            class="relative w-full max-w-7xl h-[500px] md:h-[680px] flex justify-center items-end reveal-scale delay-150">
+            <div id="portfolio-stack"
+                class="relative w-[300px] h-[400px] md:w-[450px] md:h-[580px] flex items-center justify-center">
+
+                <!-- Card 1: Process (Dark) -->
+                <div class="portfolio-card absolute w-full h-full rounded-3xl p-6 md:p-8 flex flex-col justify-between shadow-2xl transition-all duration-500 cursor-pointer overflow-hidden border border-white/10"
+                    style="background: linear-gradient(135deg, #1e2222 0%, #121515 100%);" data-index="0">
+                    <div
+                        class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(104,211,138,0.15),transparent_60%)]">
+                    </div>
+                    <!-- Top Info -->
+                    <div class="relative z-10">
+                        <div class="flex justify-between items-start">
+                            <span class="text-[10px] md:text-xs uppercase font-mono tracking-widest text-primary">01 /
+                                Processo</span>
+                            <span
+                                class="text-[10px] md:text-xs px-2.5 py-1 rounded-full bg-white/5 text-white/70 border border-white/10">Next.js
+                                14</span>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-bold mt-4 md:mt-6 text-white leading-tight">Nexus E-commerce
+                            OS</h3>
+                        <p class="text-xs md:text-sm text-on-surface-variant mt-2 max-w-[280px]">Painel de controle
+                            e-commerce de alta fidelidade com visualizações em tempo real.</p>
+                    </div>
+                    <!-- Card Body Graphic (Code/Visual) -->
+                    <div class="relative z-10 my-4 flex-grow flex items-center justify-center">
+                        <div
+                            class="w-full bg-[#161a1a]/80 rounded-xl p-3 md:p-4 border border-white/5 font-mono text-[9px] md:text-[11px] text-primary/80 space-y-1.5 shadow-inner">
+                            <div class="flex items-center gap-1.5 pb-2 border-b border-white/5">
+                                <div class="w-2.5 h-2.5 rounded-full bg-red-500/80"></div>
+                                <div class="w-2.5 h-2.5 rounded-full bg-yellow-500/80"></div>
+                                <div class="w-2.5 h-2.5 rounded-full bg-green-500/80"></div>
+                                <span class="text-[8px] md:text-[9px] text-white/40 ml-2">nexus-dashboard.tsx</span>
+                            </div>
+                            <div class="text-[#68D38A]"><span class="text-[#98c379]">const</span> dashboard = () => {
+                            </div>
+                            <div class="pl-4 text-white/50"><span
+                                    class="text-primary font-bold">useRealtimeMetrics</span>({</div>
+                            <div class="pl-8 text-white/40">interval: <span class="text-amber-500">1000</span>,</div>
+                            <div class="pl-8 text-white/40">onUpdate: (data) => render(data)</div>
+                            <div class="pl-4 text-white/50">});</div>
+                            <div class="text-[#68D38A]">};</div>
+                        </div>
+                    </div>
+                    <!-- Footer Link -->
+                    <div class="relative z-10 flex justify-between items-center mt-auto">
+                        <span class="text-xs text-white/60">Ver Detalhes</span>
+                        <span class="material-symbols-outlined text-primary">arrow_outward</span>
+                    </div>
+                </div>
+
+                <!-- Card 2: Opportunity (Light) -->
+                <div class="portfolio-card absolute w-full h-full rounded-3xl p-6 md:p-8 flex flex-col justify-between shadow-2xl transition-all duration-500 cursor-pointer overflow-hidden border border-black/5"
+                    style="background: linear-gradient(135deg, #ffffff 0%, #f4f7f6 100%);" data-index="1">
+                    <div
+                        class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(104,211,138,0.2),transparent_60%)]">
+                    </div>
+                    <!-- Top Info -->
+                    <div class="relative z-10">
+                        <div class="flex justify-between items-start">
+                            <span
+                                class="text-[10px] md:text-xs uppercase font-mono tracking-widest text-emerald-600 font-semibold">02
+                                / Oportunidade</span>
+                            <span
+                                class="text-[10px] md:text-xs px-2.5 py-1 rounded-full bg-black/5 text-black/70 border border-black/10">SaaS
+                                Platform</span>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-bold mt-4 md:mt-6 text-neutral-900 leading-tight">CloudScale
+                            SaaS</h3>
+                        <p class="text-xs md:text-sm text-neutral-600 mt-2 max-w-[280px]">Landing page de alta conversão
+                            focada em escalabilidade corporativa.</p>
+                    </div>
+                    <!-- Card Body Graphic (Visuals) -->
+                    <div class="relative z-10 my-4 flex-grow flex flex-col justify-center gap-2 md:gap-3">
+                        <div
+                            class="bg-neutral-100/80 rounded-xl p-2.5 md:p-3 border border-black/5 flex items-center justify-between shadow-sm">
+                            <div class="flex items-center gap-2 md:gap-3">
+                                <div
+                                    class="w-7 h-7 md:w-8 md:h-8 rounded-lg bg-emerald-500/10 flex items-center justify-center">
+                                    <span
+                                        class="material-symbols-outlined text-emerald-600 text-xs md:text-sm">trending_up</span>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] md:text-xs font-bold text-neutral-800">Conversão Geral</p>
+                                    <p class="text-[8px] md:text-[10px] text-neutral-500">Média de 30 dias</p>
+                                </div>
+                            </div>
+                            <span class="text-xs md:text-sm font-bold text-emerald-600">+14.2%</span>
+                        </div>
+                        <div
+                            class="bg-neutral-100/80 rounded-xl p-2.5 md:p-3 border border-black/5 flex items-center justify-between shadow-sm">
+                            <div class="flex items-center gap-2 md:gap-3">
+                                <div
+                                    class="w-7 h-7 md:w-8 md:h-8 rounded-lg bg-emerald-500/10 flex items-center justify-center">
+                                    <span
+                                        class="material-symbols-outlined text-emerald-600 text-xs md:text-sm">speed</span>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] md:text-xs font-bold text-neutral-800">PageSpeed Score</p>
+                                    <p class="text-[8px] md:text-[10px] text-neutral-500">Google Lighthouse</p>
+                                </div>
+                            </div>
+                            <span class="text-xs md:text-sm font-bold text-neutral-800">99/100</span>
+                        </div>
+                    </div>
+                    <!-- Footer Link -->
+                    <div class="relative z-10 flex justify-between items-center mt-auto">
+                        <span class="text-xs text-neutral-700 font-medium">Ver Detalhes</span>
+                        <span class="material-symbols-outlined text-emerald-600">arrow_outward</span>
+                    </div>
+                </div>
+
+                <!-- Card 3: Metrics (Dark with stats/profile picture) -->
+                <div class="portfolio-card absolute w-full h-full rounded-3xl p-6 md:p-8 flex flex-col justify-between shadow-2xl transition-all duration-500 cursor-pointer overflow-hidden border border-white/10"
+                    style="background: linear-gradient(135deg, #1c1d22 0%, #0e0f12 100%);" data-index="2">
+                    <div
+                        class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(104,211,138,0.1),transparent_60%)]">
+                    </div>
+                    <!-- Top Info -->
+                    <div class="relative z-10">
+                        <div class="flex justify-between items-start">
+                            <span class="text-[10px] md:text-xs uppercase font-mono tracking-widest text-primary">03 /
+                                Métricas</span>
+                            <span
+                                class="text-[10px] md:text-xs px-2.5 py-1 rounded-full bg-white/5 text-white/70 border border-white/10">AI
+                                Logistics</span>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-bold mt-4 md:mt-6 text-white leading-tight">AI Logistics OS
+                        </h3>
+                        <p class="text-xs md:text-sm text-white/60 mt-2 max-w-[280px]">Interface inteligente de
+                            logística automatizada e integração com OpenAI.</p>
+                    </div>
+                    <!-- Card Body Graphic (Visuals) -->
+                    <div class="relative z-10 my-4 flex-grow flex items-center justify-between gap-3 md:gap-4">
+                        <div
+                            class="flex-1 bg-white/5 rounded-xl p-3 md:p-4 border border-white/5 text-center shadow-md">
+                            <p class="text-xl md:text-2xl font-bold text-primary font-mono">99.8%</p>
+                            <p class="text-[8px] md:text-[9px] uppercase tracking-wider text-white/40 mt-1">Uptime SLA
+                            </p>
+                        </div>
+                        <div
+                            class="flex-1 bg-white/5 rounded-xl p-3 md:p-4 border border-white/5 flex flex-col items-center justify-center shadow-md">
+                            <div
+                                class="w-7 h-7 md:w-8 md:h-8 rounded-full overflow-hidden border border-primary/40 mb-1">
+                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpGZETxyOgy3KXaiUfzhYTrmOyGHzYmyr4IVFIp5y6sQC3QqSCXnh8rECNLzAPTK-BsGwRyhPcoWuA7Thx_INbH3JR13KThWvz4mWlk9B8aKaAWWnVdhemp7blbVD8ecE-YVnn2hGxcwcqQaYhymotF9TbAuL6bjawpTrkYidTiKj4sTFOOgnRnhK3lw2lTNIoJK3Yf2_kJ8_00VhftsIP-ZVZqZt6VgbTWWWZGmRcizzRvZ8I6-FCR7jy_IfY2ErgpTuLvRFQTiQ"
+                                    alt="Alexsander Marinho" class="w-full h-full object-cover" />
+                            </div>
+                            <span class="text-[8px] md:text-[9px] text-white/60 font-bold">Alexsander M.</span>
+                            <span class="text-[6px] md:text-[7px] text-white/40 font-mono">Lead Dev</span>
+                        </div>
+                    </div>
+                    <!-- Footer Link -->
+                    <div class="relative z-10 flex justify-between items-center mt-auto">
+                        <span class="text-xs text-white/60">Ver Detalhes</span>
+                        <span class="material-symbols-outlined text-primary">arrow_outward</span>
+                    </div>
+                </div>
+
+                <!-- Card 4: Identity (Red with bold typography) -->
+                <div class="portfolio-card absolute w-full h-full rounded-3xl p-6 md:p-8 flex flex-col justify-between shadow-2xl transition-all duration-500 cursor-pointer overflow-hidden border border-red-500/20"
+                    style="background: linear-gradient(135deg, #e11d48 0%, #9f1239 100%);" data-index="3">
+                    <div
+                        class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.2),transparent_60%)]">
+                    </div>
+                    <!-- Top Info -->
+                    <div class="relative z-10">
+                        <div class="flex justify-between items-start">
+                            <span class="text-[10px] md:text-xs uppercase font-mono tracking-widest text-white/80">04 /
+                                Identidade</span>
+                            <span
+                                class="text-[10px] md:text-xs px-2.5 py-1 rounded-full bg-white/10 text-white border border-white/20">WebSockets</span>
+                        </div>
+                        <h3
+                            class="text-2xl md:text-3xl font-black mt-6 md:mt-8 text-white leading-tight uppercase tracking-tight">
+                            TeamSync App</h3>
+                        <p class="text-xs md:text-sm text-white/90 mt-2 max-w-[280px] font-medium">Plataforma de
+                            colaboração em tempo real e sincronia instantânea.</p>
+                    </div>
+                    <!-- Card Body Graphic (Bold Typography Focus) -->
+                    <div class="relative z-10 my-4 flex-grow flex items-center justify-center">
+                        <div
+                            class="text-center select-none font-black text-white/10 text-5xl md:text-6xl tracking-widest uppercase font-sans">
+                            SYNC
+                        </div>
+                    </div>
+                    <!-- Footer Link -->
+                    <div class="relative z-10 flex justify-between items-center mt-auto">
+                        <span class="text-xs text-white/95 font-bold">Ver Detalhes</span>
+                        <span class="material-symbols-outlined text-white">arrow_outward</span>
+                    </div>
+                </div>
+
+                <!-- Card 5: Performance (Dark Green with microservices graphics) -->
+                <div class="portfolio-card absolute w-full h-full rounded-3xl p-6 md:p-8 flex flex-col justify-between shadow-2xl transition-all duration-500 cursor-pointer overflow-hidden border border-emerald-500/20"
+                    style="background: linear-gradient(135deg, #064e3b 0%, #022c22 100%);" data-index="4">
+                    <div
+                        class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(104,211,138,0.25),transparent_60%)]">
+                    </div>
+                    <!-- Top Info -->
+                    <div class="relative z-10">
+                        <div class="flex justify-between items-start">
+                            <span class="text-[10px] md:text-xs uppercase font-mono tracking-widest text-primary">05 /
+                                Performance</span>
+                            <span
+                                class="text-[10px] md:text-xs px-2.5 py-1 rounded-full bg-white/5 text-white/70 border border-white/10">gRPC
+                                & Redis</span>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-bold mt-4 md:mt-6 text-white leading-tight">CloudAPI Gateway
+                        </h3>
+                        <p class="text-xs md:text-sm text-white/60 mt-2 max-w-[280px]">Infraestrutura de microsserviços
+                            ultra-veloz processando milhões de requisições.</p>
+                    </div>
+                    <!-- Card Body Graphic (Microservices Visual) -->
+                    <div class="relative z-10 my-4 flex-grow flex flex-col justify-center gap-2">
+                        <div
+                            class="flex items-center justify-between bg-black/20 rounded-xl p-2.5 border border-white/5 shadow-md">
+                            <span class="text-[10px] font-mono text-white/50">Response Time</span>
+                            <span class="text-[11px] font-mono font-bold text-primary">0.8 ms</span>
+                        </div>
+                        <div
+                            class="flex items-center justify-between bg-black/20 rounded-xl p-2.5 border border-white/5 shadow-md">
+                            <span class="text-[10px] font-mono text-white/50">Throughput</span>
+                            <span class="text-[11px] font-mono font-bold text-white">125k req/s</span>
+                        </div>
+                    </div>
+                    <!-- Footer Link -->
+                    <div class="relative z-10 flex justify-between items-center mt-auto">
+                        <span class="text-xs text-white/60">Ver Detalhes</span>
+                        <span class="material-symbols-outlined text-primary">arrow_outward</span>
+                    </div>
+                </div>
+                <!-- Prev Button -->
+                <button id="prev-card"
+                    class="absolute -left-6 md:-left-20 -top-6 md:-top-12 w-12 h-12 rounded-full border border-white/10 flex items-center justify-center bg-white/5 hover:bg-white/10 hover:border-primary/50 text-white transition-all duration-300 active:scale-90 z-50"
+                    style="transform: translate3d(0, 0, 150px);">
+                    <span class="material-symbols-outlined">arrow_back</span>
+                </button>
+                <!-- Next Button -->
+                <button id="next-card"
+                    class="absolute -right-6 md:-right-20 -top-6 md:-top-12 w-12 h-12 rounded-full border border-white/10 flex items-center justify-center bg-white/5 hover:bg-white/10 hover:border-primary/50 text-white transition-all duration-300 active:scale-90 z-50"
+                    style="transform: translate3d(0, 0, 150px);">
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                </button>
+            </div>
+        </div>
+        <!-- Bottom Shadow Gradient Overlay -->
+        <div
+            class="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-[#111414] via-[#111414]/85 to-transparent pointer-events-none z-30">
+        </div>
+    </section>
+
+    <!-- 5. Testimonials Section -->
+    <section class="py-section-gap overflow-hidden bg-surface-container-low/30 relative" id="sobre">
+        <!-- Fade Mask Overlays -->
+        <div
+            class="absolute inset-y-0 left-0 w-24 md:w-48 bg-gradient-to-r from-[#111414] to-transparent z-10 pointer-events-none">
+        </div>
+        <div
+            class="absolute inset-y-0 right-0 w-24 md:w-48 bg-gradient-to-l from-[#111414] to-transparent z-10 pointer-events-none">
+        </div>
+
+        <div class="text-center mb-16 px-gutter reveal">
+            <span
+                class="text-primary font-label-md text-label-md uppercase tracking-widest mb-4 block">Depoimentos</span>
+            <h2 class="font-headline-md text-headline-md text-on-surface">O que dizem os clientes</h2>
+            <p class="text-on-surface-variant max-w-xl mx-auto">Experiências reais de quem acelerou seu negócio conosco.
+            </p>
+        </div>
+
+        <div class="space-y-6">
+            <!-- Row 1: Scrolling Left -->
+            <div class="w-full overflow-hidden flex select-none pointer-events-auto cursor-default">
+                <div class="animate-marquee-left flex">
+                    <!-- Card 1 -->
+                    <div
+                        class="glass-card p-6 rounded-2xl flex flex-col justify-between w-[320px] md:w-[380px] flex-shrink-0 mx-3">
+                        <p class="text-xs md:text-sm text-on-surface-variant leading-relaxed mb-6 font-medium">
+                            "O novo site mudou o patamar da minha empresa. Clientes de alto valor agora me encontram e
+                            me contratam."
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <img src="./imgs/avatar1.png" alt="Avatar"
+                                class="w-8 h-8 rounded-full object-cover border border-white/10 flex-shrink-0" />
+                            <div>
+                                <h4 class="text-xs font-bold text-white">Rodrigo Lima</h4>
+                                <p class="text-[9px] uppercase tracking-wider text-on-surface-variant mt-0.5">
+                                    Proprietário de Advocacia</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div
+                        class="glass-card p-6 rounded-2xl flex flex-col justify-between w-[320px] md:w-[380px] flex-shrink-0 mx-3">
+                        <p class="text-xs md:text-sm text-on-surface-variant leading-relaxed mb-6 font-medium">
+                            "Entregou tudo pronto em apenas 2 dias. Não precisei me preocupar com nada, processo super
+                            prático e direto."
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <img src="./imgs/avatar2.png" alt="Avatar"
+                                class="w-8 h-8 rounded-full object-cover border border-white/10 flex-shrink-0" />
+                            <div>
+                                <h4 class="text-xs font-bold text-white">Camila Neves</h4>
+                                <p class="text-[9px] uppercase tracking-wider text-on-surface-variant mt-0.5">Dona de
+                                    Clínica de Estética</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div
+                        class="glass-card p-6 rounded-2xl flex flex-col justify-between w-[320px] md:w-[380px] flex-shrink-0 mx-3">
+                        <p class="text-xs md:text-sm text-on-surface-variant leading-relaxed mb-6 font-medium">
+                            "Minhas vendas triplicaram depois que colocamos a página no ar. O investimento se pagou no
+                            primeiro mês."
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <img src="./imgs/avatar1.png" alt="Avatar"
+                                class="w-8 h-8 rounded-full object-cover border border-white/10 flex-shrink-0" />
+                            <div>
+                                <h4 class="text-xs font-bold text-white">Marcos Rocha</h4>
+                                <p class="text-[9px] uppercase tracking-wider text-on-surface-variant mt-0.5">Diretor de
+                                    Distribuidora</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div
+                        class="glass-card p-6 rounded-2xl flex flex-col justify-between w-[320px] md:w-[380px] flex-shrink-0 mx-3">
+                        <p class="text-xs md:text-sm text-on-surface-variant leading-relaxed mb-6 font-medium">
+                            "O design passa tanta confiança que fechamos 3 contratos de alto valor logo na primeira
+                            semana do site."
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <img src="./imgs/avatar2.png" alt="Avatar"
+                                class="w-8 h-8 rounded-full object-cover border border-white/10 flex-shrink-0" />
+                            <div>
+                                <h4 class="text-xs font-bold text-white">Mariana Costa</h4>
+                                <p class="text-[9px] uppercase tracking-wider text-on-surface-variant mt-0.5">Fundadora
+                                    de Consultoria</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Repeat for seamless scroll -->
+                    <!-- Card 1 -->
+                    <div
+                        class="glass-card p-6 rounded-2xl flex flex-col justify-between w-[320px] md:w-[380px] flex-shrink-0 mx-3">
+                        <p class="text-xs md:text-sm text-on-surface-variant leading-relaxed mb-6 font-medium">
+                            "O novo site mudou o patamar da minha empresa. Clientes de alto valor agora me encontram e
+                            me contratam."
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <img src="./imgs/avatar1.png" alt="Avatar"
+                                class="w-8 h-8 rounded-full object-cover border border-white/10 flex-shrink-0" />
+                            <div>
+                                <h4 class="text-xs font-bold text-white">Rodrigo Lima</h4>
+                                <p class="text-[9px] uppercase tracking-wider text-on-surface-variant mt-0.5">
+                                    Proprietário de Advocacia</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div
+                        class="glass-card p-6 rounded-2xl flex flex-col justify-between w-[320px] md:w-[380px] flex-shrink-0 mx-3">
+                        <p class="text-xs md:text-sm text-on-surface-variant leading-relaxed mb-6 font-medium">
+                            "Entregou tudo pronto em apenas 2 dias. Não precisei me preocupar com nada, processo super
+                            prático e direto."
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <img src="./imgs/avatar2.png" alt="Avatar"
+                                class="w-8 h-8 rounded-full object-cover border border-white/10 flex-shrink-0" />
+                            <div>
+                                <h4 class="text-xs font-bold text-white">Camila Neves</h4>
+                                <p class="text-[9px] uppercase tracking-wider text-on-surface-variant mt-0.5">Dona de
+                                    Clínica de Estética</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div
+                        class="glass-card p-6 rounded-2xl flex flex-col justify-between w-[320px] md:w-[380px] flex-shrink-0 mx-3">
+                        <p class="text-xs md:text-sm text-on-surface-variant leading-relaxed mb-6 font-medium">
+                            "Minhas vendas triplicaram depois que colocamos a página no ar. O investimento se pagou no
+                            primeiro mês."
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <img src="./imgs/avatar1.png" alt="Avatar"
+                                class="w-8 h-8 rounded-full object-cover border border-white/10 flex-shrink-0" />
+                            <div>
+                                <h4 class="text-xs font-bold text-white">Marcos Rocha</h4>
+                                <p class="text-[9px] uppercase tracking-wider text-on-surface-variant mt-0.5">Diretor de
+                                    Distribuidora</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div
+                        class="glass-card p-6 rounded-2xl flex flex-col justify-between w-[320px] md:w-[380px] flex-shrink-0 mx-3">
+                        <p class="text-xs md:text-sm text-on-surface-variant leading-relaxed mb-6 font-medium">
+                            "O design passa tanta confiança que fechamos 3 contratos de alto valor logo na primeira
+                            semana do site."
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <img src="./imgs/avatar2.png" alt="Avatar"
+                                class="w-8 h-8 rounded-full object-cover border border-white/10 flex-shrink-0" />
+                            <div>
+                                <h4 class="text-xs font-bold text-white">Mariana Costa</h4>
+                                <p class="text-[9px] uppercase tracking-wider text-on-surface-variant mt-0.5">Fundadora
+                                    de Consultoria</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 2: Scrolling Right -->
+            <div class="w-full overflow-hidden flex select-none pointer-events-auto cursor-default">
+                <div class="animate-marquee-right flex">
+                    <!-- Card 5 -->
+                    <div
+                        class="glass-card p-6 rounded-2xl flex flex-col justify-between w-[320px] md:w-[380px] flex-shrink-0 mx-3">
+                        <p class="text-xs md:text-sm text-on-surface-variant leading-relaxed mb-6 font-medium">
+                            "A melhor decisão que tomei para o meu negócio. Atendimento ágil e um site que realmente
+                            traz clientes."
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <img src="./imgs/avatar1.png" alt="Avatar"
+                                class="w-8 h-8 rounded-full object-cover border border-white/10 flex-shrink-0" />
+                            <div>
+                                <h4 class="text-xs font-bold text-white">Tiago André</h4>
+                                <p class="text-[9px] uppercase tracking-wider text-on-surface-variant mt-0.5">Dono de
+                                    Escola de Cursos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div
+                        class="glass-card p-6 rounded-2xl flex flex-col justify-between w-[320px] md:w-[380px] flex-shrink-0 mx-3">
+                        <p class="text-xs md:text-sm text-on-surface-variant leading-relaxed mb-6 font-medium">
+                            "Eu não entendo nada de internet e ele fez tudo por mim. O site ficou lindo, limpo e muito
+                            fácil de mexer."
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <img src="./imgs/avatar2.png" alt="Avatar"
+                                class="w-8 h-8 rounded-full object-cover border border-white/10 flex-shrink-0" />
+                            <div>
+                                <h4 class="text-xs font-bold text-white">Larissa Souza</h4>
+                                <p class="text-[9px] uppercase tracking-wider text-on-surface-variant mt-0.5">
+                                    Proprietária de Empório</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 7 -->
+                    <div
+                        class="glass-card p-6 rounded-2xl flex flex-col justify-between w-[320px] md:w-[380px] flex-shrink-0 mx-3">
+                        <p class="text-xs md:text-sm text-on-surface-variant leading-relaxed mb-6 font-medium">
+                            "Nosso faturamento subiu muito depois que modernizamos nosso site institucional. A imagem da
+                            empresa mudou."
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <img src="./imgs/avatar1.png" alt="Avatar"
+                                class="w-8 h-8 rounded-full object-cover border border-white/10 flex-shrink-0" />
+                            <div>
+                                <h4 class="text-xs font-bold text-white">Roberto Junior</h4>
+                                <p class="text-[9px] uppercase tracking-wider text-on-surface-variant mt-0.5">Diretor de
+                                    Construtora</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 8 -->
+                    <div
+                        class="glass-card p-6 rounded-2xl flex flex-col justify-between w-[320px] md:w-[380px] flex-shrink-0 mx-3">
+                        <p class="text-xs md:text-sm text-on-surface-variant leading-relaxed mb-6 font-medium">
+                            "Rápido, prestativo e muito profissional. O site carrega instantaneamente e os clientes
+                            elogiam o tempo todo."
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <img src="./imgs/avatar2.png" alt="Avatar"
+                                class="w-8 h-8 rounded-full object-cover border border-white/10 flex-shrink-0" />
+                            <div>
+                                <h4 class="text-xs font-bold text-white">Ana Júlia</h4>
+                                <p class="text-[9px] uppercase tracking-wider text-on-surface-variant mt-0.5">Sócia de
+                                    Escritório de Arq.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Repeat for seamless scroll -->
+                    <!-- Card 5 -->
+                    <div
+                        class="glass-card p-6 rounded-2xl flex flex-col justify-between w-[320px] md:w-[380px] flex-shrink-0 mx-3">
+                        <p class="text-xs md:text-sm text-on-surface-variant leading-relaxed mb-6 font-medium">
+                            "A melhor decisão que tomei para o meu negócio. Atendimento ágil e um site que realmente
+                            traz clientes."
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <img src="./imgs/avatar1.png" alt="Avatar"
+                                class="w-8 h-8 rounded-full object-cover border border-white/10 flex-shrink-0" />
+                            <div>
+                                <h4 class="text-xs font-bold text-white">Tiago André</h4>
+                                <p class="text-[9px] uppercase tracking-wider text-on-surface-variant mt-0.5">Dono de
+                                    Escola de Cursos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div
+                        class="glass-card p-6 rounded-2xl flex flex-col justify-between w-[320px] md:w-[380px] flex-shrink-0 mx-3">
+                        <p class="text-xs md:text-sm text-on-surface-variant leading-relaxed mb-6 font-medium">
+                            "Eu não entendo nada de internet e ele fez tudo por mim. O site ficou lindo, limpo e muito
+                            fácil de mexer."
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <img src="./imgs/avatar2.png" alt="Avatar"
+                                class="w-8 h-8 rounded-full object-cover border border-white/10 flex-shrink-0" />
+                            <div>
+                                <h4 class="text-xs font-bold text-white">Larissa Souza</h4>
+                                <p class="text-[9px] uppercase tracking-wider text-on-surface-variant mt-0.5">
+                                    Proprietária de Empório</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 7 -->
+                    <div
+                        class="glass-card p-6 rounded-2xl flex flex-col justify-between w-[320px] md:w-[380px] flex-shrink-0 mx-3">
+                        <p class="text-xs md:text-sm text-on-surface-variant leading-relaxed mb-6 font-medium">
+                            "Nosso faturamento mudou muito depois que modernizamos nosso site institucional. A imagem da
+                            empresa mudou."
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <img src="./imgs/avatar1.png" alt="Avatar"
+                                class="w-8 h-8 rounded-full object-cover border border-white/10 flex-shrink-0" />
+                            <div>
+                                <h4 class="text-xs font-bold text-white">Roberto Junior</h4>
+                                <p class="text-[9px] uppercase tracking-wider text-on-surface-variant mt-0.5">Diretor de
+                                    Construtora</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 8 -->
+                    <div
+                        class="glass-card p-6 rounded-2xl flex flex-col justify-between w-[320px] md:w-[380px] flex-shrink-0 mx-3">
+                        <p class="text-xs md:text-sm text-on-surface-variant leading-relaxed mb-6 font-medium">
+                            "Rápido, prestativo e muito profissional. O site carrega instantaneamente e os clientes
+                            elogiam o tempo todo."
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <img src="./imgs/avatar2.png" alt="Avatar"
+                                class="w-8 h-8 rounded-full object-cover border border-white/10 flex-shrink-0" />
+                            <div>
+                                <h4 class="text-xs font-bold text-white">Ana Júlia</h4>
+                                <p class="text-[9px] uppercase tracking-wider text-on-surface-variant mt-0.5">Sócia de
+                                    Escritório de Arq.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Process Section (48h Flow) -->
+    <section class="py-section-gap px-gutter max-w-container-max mx-auto">
+        <div class="text-center mb-20 reveal">
+            <h2 class="font-headline-md text-headline-md text-on-surface">Entrega em 48 Horas</h2>
+            <p class="text-on-surface-variant">Um processo refinado para quem não pode perder tempo.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="p-10 glass-card rounded-2xl relative reveal">
+                <span
+                    class="absolute top-6 right-8 text-primary/10 font-display-lg text-[100px] leading-none -z-10">01</span>
+                <span class="material-symbols-outlined text-primary text-4xl mb-6">psychology</span>
+                <h3 class="font-headline-sm text-headline-sm mb-4">Briefing Estratégico</h3>
+                <p class="text-on-surface-variant font-body-md">Definimos seus objetivos, público-alvo e conversão em
+                    uma call rápida e direta.</p>
+            </div>
+            <div class="p-10 glass-card rounded-2xl relative border-primary/20 reveal delay-100">
+                <span
+                    class="absolute top-6 right-8 text-primary/10 font-display-lg text-[100px] leading-none -z-10">02</span>
+                <span class="material-symbols-outlined text-primary text-4xl mb-6">code</span>
+                <h3 class="font-headline-sm text-headline-sm mb-4">Desenvolvimento Ultra-Focado</h3>
+                <p class="text-on-surface-variant font-body-md">48 horas de codificação intensa usando meu boilerplate
+                    proprietário de alta performance.</p>
+            </div>
+            <div class="p-10 glass-card rounded-2xl relative reveal delay-200">
+                <span
+                    class="absolute top-6 right-8 text-primary/10 font-display-lg text-[100px] leading-none -z-10">03</span>
+                <span class="material-symbols-outlined text-primary text-4xl mb-6">rocket_launch</span>
+                <h3 class="font-headline-sm text-headline-sm mb-4">Lançamento e Suporte</h3>
+                <p class="text-on-surface-variant font-body-md">Seu site no ar com SEO otimizado e pronto para receber
+                    tráfego e gerar vendas.</p>
+            </div>
+        </div>
+    </section>
+    <!-- 7. Pricing Section -->
+    <section class="py-section-gap px-gutter bg-surface-container-high/30" id="precos">
+        <div class="max-w-container-max mx-auto">
+            <div class="text-center mb-16 reveal">
+                <h2 class="font-headline-md text-headline-md text-on-surface">Investimento</h2>
+                <p class="text-on-surface-variant">Modelos flexíveis para cada estágio do seu negócio.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+                <!-- Plan 1: Landing Page -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between reveal">
+                    <div>
+                        <h3 class="font-headline-sm text-lg font-bold text-white mb-2">Landing Page</h3>
+                        <p class="text-on-surface-variant text-xs mb-6">Focada em conversão ultra-rápida.</p>
+                        <div class="mb-6">
+                            <span class="text-on-surface-variant text-[11px] block">A partir de</span>
+                            <div class="flex items-baseline gap-2 mt-1">
+                                <span class="text-xs line-through text-on-surface-variant/50">R$ 639,80</span>
+                                <div class="text-2xl font-black text-primary">R$ 319,90</div>
+                            </div>
+                            <span
+                                class="inline-flex items-center mt-1.5 text-[9px] font-bold bg-primary/10 text-primary border border-primary/20 px-2 py-0.5 rounded-full uppercase tracking-wider">50%
+                                OFF</span>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-2 text-xs text-on-surface-variant"><span
+                                    class="material-symbols-outlined text-primary text-sm">check_circle</span> Entrega
+                                Express em 48h</li>
+                            <li class="flex items-center gap-2 text-xs text-on-surface-variant"><span
+                                    class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                                Mobile-First & SEO</li>
+                            <li class="flex items-center gap-2 text-xs text-on-surface-variant"><span
+                                    class="material-symbols-outlined text-primary text-sm">check_circle</span> Botão de
+                                WhatsApp</li>
+                        </ul>
+                    </div>
+                    <a href="https://ig.me/m/alexsander.code?text=Ola,%20tenho%20interesse%20em%20iniciar%20uma%20landing%20page"
+                        target="_blank" rel="noopener noreferrer"
+                        class="inline-block w-full border border-primary/20 text-primary py-3 rounded-lg text-xs font-bold hover:bg-primary/10 transition-all text-center">Começar
+                        Agora</a>
+                </div>
+
+                <!-- Plan 2: Institucional (Mais Procurado) -->
+                <div
+                    class="glass-card p-6 rounded-2xl border border-primary/30 flex flex-col justify-between relative overflow-hidden shadow-xl reveal delay-100">
+                    <div
+                        class="absolute top-0 right-0 bg-primary text-on-primary-fixed text-[8px] font-bold px-3 py-1 uppercase tracking-tighter">
+                        Mais Procurado
+                    </div>
+                    <div>
+                        <h3 class="font-headline-sm text-lg font-bold text-white mb-2">Institucional</h3>
+                        <p class="text-on-surface-variant text-xs mb-6">Autoridade completa para sua marca.</p>
+                        <div class="mb-6">
+                            <span class="text-on-surface-variant text-[11px] block">A partir de</span>
+                            <div class="flex items-baseline gap-2 mt-1">
+                                <span class="text-xs line-through text-on-surface-variant/50">R$ 959,80</span>
+                                <div class="text-2xl font-black text-primary">R$ 479,90</div>
+                            </div>
+                            <span
+                                class="inline-flex items-center mt-1.5 text-[9px] font-bold bg-primary/10 text-primary border border-primary/20 px-2 py-0.5 rounded-full uppercase tracking-wider">50%
+                                OFF</span>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-2 text-xs text-on-surface-variant"><span
+                                    class="material-symbols-outlined text-primary text-sm">check_circle</span> Até 5
+                                Páginas Estruturadas</li>
+                            <li class="flex items-center gap-2 text-xs text-on-surface-variant"><span
+                                    class="material-symbols-outlined text-primary text-sm">check_circle</span> Gestão de
+                                Conteúdo / Blog</li>
+                            <li class="flex items-center gap-2 text-xs text-on-surface-variant"><span
+                                    class="material-symbols-outlined text-primary text-sm">check_circle</span> Domínio &
+                                E-mails Profissionais</li>
+                        </ul>
+                    </div>
+                    <a href="https://ig.me/m/alexsander.code?text=Ola,%20tenho%20interesse%20em%20iniciar%20um%20site"
+                        target="_blank" rel="noopener noreferrer"
+                        class="inline-block w-full bg-primary-container text-on-primary-fixed py-3 rounded-lg text-xs font-bold primary-glow transition-all text-center">Selecionar
+                        Plano</a>
+                </div>
+                <!-- Plan 3: Sistemas -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between reveal delay-200">
+                    <div>
+                        <h3 class="font-headline-sm text-lg font-bold text-white mb-2">Sistemas</h3>
+                        <p class="text-on-surface-variant text-xs mb-6">Soluções complexas sob medida.</p>
+                        <div class="mb-6">
+                            <span class="text-on-surface-variant text-[11px] block">A partir de</span>
+                            <div class="flex items-baseline gap-2 mt-1">
+                                <span class="text-xs line-through text-on-surface-variant/50">R$ 399,80</span>
+                                <div class="text-2xl font-black text-primary">R$ 199,90</div>
+                            </div>
+                            <span
+                                class="inline-flex items-center mt-1.5 text-[9px] font-bold bg-primary/10 text-primary border border-primary/20 px-2 py-0.5 rounded-full uppercase tracking-wider">50%
+                                OFF</span>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-2 text-xs text-on-surface-variant"><span
+                                    class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                                Arquitetura Cloud</li>
+                            <li class="flex items-center gap-2 text-xs text-on-surface-variant"><span
+                                    class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                                Dashboards Internos</li>
+                            <li class="flex items-center gap-2 text-xs text-on-surface-variant"><span
+                                    class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                                Integrações de API</li>
+                        </ul>
+                    </div>
+                    <a href="https://ig.me/m/alexsander.code?text=Ola,%20tenho%20interesse%20em%20iniciar%20um%20sistema"
+                        target="_blank" rel="noopener noreferrer"
+                        class="inline-block w-full border border-primary/20 text-primary py-3 rounded-lg text-xs font-bold hover:bg-primary/10 transition-all text-center">Começar
+                        Agora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 8. CTA Section -->
+    <section class="py-section-gap px-gutter max-w-container-max mx-auto flex justify-center items-center" id="contato">
+        <div class="relative w-full max-w-4xl rounded-[32px] p-10 md:p-16 flex flex-col items-center justify-center overflow-hidden border border-white/10 shadow-2xl reveal-scale"
+            style="background: linear-gradient(135deg, #111313 0%, #0a0c0c 100%);">
+            <!-- Glowing Background Circles -->
+            <div
+                class="absolute -left-32 -bottom-32 w-96 h-96 bg-primary/5 rounded-full blur-[100px] pointer-events-none">
+            </div>
+            <div
+                class="absolute -right-32 -top-32 w-96 h-96 bg-primary/5 rounded-full blur-[100px] pointer-events-none">
+            </div>
+
+            <!-- Top Label -->
+            <p class="text-[10px] md:text-xs uppercase tracking-[0.25em] text-[#8e9292] font-semibold text-center mb-6">
+                Última Chance</p>
+
+            <!-- Heading -->
+            <h2 class="font-display-lg text-3xl md:text-5xl text-white font-medium text-center leading-tight mb-8">
+                Sua página <span class="font-bold">profissional</span><br>pronta em <span
+                    class="bg-gradient-to-r from-[#68D38A] to-[#2DEA69] bg-clip-text text-transparent font-bold">48
+                    horas</span>.
+            </h2>
+
+            <!-- Translucent Pill Badge -->
+            <div
+                class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-white/5 border border-white/10 text-[11px] text-[#d1d5d5] mx-auto mb-8 shadow-inner">
+                <span class="material-symbols-outlined text-primary text-sm">schedule</span>
+                <span>Últimas 2 de 5 vagas disponíveis hoje</span>
+            </div>
+
+            <!-- Orange Glowing Call-to-Action Button -->
+            <a href="https://ig.me/m/alexsander.code?text=Ola,%20tenho%20interesse%20em%20iniciar%20um%20projeto"
+                target="_blank" rel="noopener noreferrer"
+                class="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#68D38A] to-[#2DEA69] text-on-primary-fixed px-10 py-5 rounded-full font-bold font-label-md text-label-md transition-all duration-300 hover:scale-105 active:scale-95 mx-auto shadow-[0_15px_40px_rgba(104,211,138,0.3)] hover:shadow-[0_20px_50px_rgba(104,211,138,0.45)] text-center">
+                Garantir minha vaga
+                <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+
+            <!-- Footer Info -->
+            <p class="text-[10px] md:text-xs text-[#8e9292] text-center mt-8 tracking-wide">
+                <span class="line-through text-white/30 mr-1">R$ 494</span> De R$ 247 • parcelado em até 12x • Garantia
+                7 dias
+            </p>
+        </div>
+    </section>
+    <!-- 9. Footer -->
+    <footer class="w-full py-16 flex flex-col items-center justify-center border-t border-on-surface/5 bg-[#111414]/30">
+        <div class="flex flex-col items-center justify-center text-center space-y-3">
+            <!-- Logo -->
+            <img alt="Logo Alexsander Marinho" class="h-8 object-contain mb-2" src="./imgs/logo.svg" />
+
+            <!-- Copyright Info -->
+            <p class="text-xs md:text-sm text-on-surface-variant font-medium">
+                Alex © 2026 · Todos os direitos reservados
+            </p>
+
+            <!-- Instagram Contact -->
+            <p class="text-xs md:text-sm text-on-surface-variant font-medium">
+                Atendimento via Instagram <a href="https://ig.me/m/alexsander.code" target="_blank"
+                    rel="noopener noreferrer"
+                    class="font-bold text-white hover:text-primary transition-colors">@alexsander.code</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Floating Instagram Chat Button -->
+    <a href="https://ig.me/m/alexsander.code" target="_blank" rel="noopener noreferrer"
+        class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full flex items-center justify-center bg-primary text-on-primary-fixed shadow-xl hover:scale-110 hover:shadow-[0_0_25px_rgba(104,211,138,0.45)] active:scale-95 transition-all duration-300"
+        title="Atendimento via Instagram">
+        <span class="material-symbols-outlined text-2xl font-bold">chat_bubble</span>
+    </a>
+
+</body>
+
+</html>
