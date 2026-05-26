@@ -32,7 +32,18 @@
     </nav>
     <!-- 2. Hero Section -->
     <section
-        class="relative min-h-[80vh] flex flex-col items-center justify-center text-center px-gutter py-section-gap overflow-hidden">
+        class="relative min-h-[75vh] flex flex-col items-center justify-center text-center px-gutter py-section-gap overflow-hidden">
+        <!-- Background Video -->
+        <video
+            class="absolute inset-0 w-full h-full object-cover -z-20 pointer-events-none"
+            autoplay
+            loop
+            muted
+            playsinline
+            src="./imgs/video-hero.mp4">
+        </video>
+        <!-- Overlay to ensure text readability -->
+        <div class="absolute inset-0 bg-[#111414]/75 -z-10"></div>
         <!-- Background Ambient Glow -->
         <div
             class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/10 blur-[120px] rounded-full -z-10">
@@ -103,40 +114,28 @@
                     <div class="relative z-10">
                         <div class="flex justify-between items-start">
                             <span class="text-[10px] md:text-xs uppercase font-mono tracking-widest text-primary">01 /
-                                Processo</span>
+                                Imobiliária</span>
                             <span
-                                class="text-[10px] md:text-xs px-2.5 py-1 rounded-full bg-white/5 text-white/70 border border-white/10">Next.js
-                                14</span>
+                                class="text-[10px] md:text-xs px-2.5 py-1 rounded-full bg-white/5 text-white/70 border border-white/10">Next.js</span>
                         </div>
-                        <h3 class="text-xl md:text-2xl font-bold mt-4 md:mt-6 text-white leading-tight">Nexus E-commerce
-                            OS</h3>
-                        <p class="text-xs md:text-sm text-on-surface-variant mt-2 max-w-[280px]">Painel de controle
-                            e-commerce de alta fidelidade com visualizações em tempo real.</p>
+                        <h3 class="text-xl md:text-2xl font-bold mt-4 md:mt-6 text-white leading-tight">Ascendia 13</h3>
+                        <p class="text-xs md:text-sm text-on-surface-variant mt-2 max-w-[280px]">Plataforma de alta performance para busca e venda de imóveis selecionados.</p>
                     </div>
-                    <!-- Card Body Graphic (Code/Visual) -->
-                    <div class="relative z-10 my-4 flex-grow flex items-center justify-center">
-                        <div
-                            class="w-full bg-[#161a1a]/80 rounded-xl p-3 md:p-4 border border-white/5 font-mono text-[9px] md:text-[11px] text-primary/80 space-y-1.5 shadow-inner">
-                            <div class="flex items-center gap-1.5 pb-2 border-b border-white/5">
-                                <div class="w-2.5 h-2.5 rounded-full bg-red-500/80"></div>
-                                <div class="w-2.5 h-2.5 rounded-full bg-yellow-500/80"></div>
-                                <div class="w-2.5 h-2.5 rounded-full bg-green-500/80"></div>
-                                <span class="text-[8px] md:text-[9px] text-white/40 ml-2">nexus-dashboard.tsx</span>
+                    <!-- Card Body Graphic (Browser Mockup) -->
+                    <div class="relative z-10 my-4 flex-grow flex items-center justify-center overflow-hidden">
+                        <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden border border-white/10 bg-[#161a1a]/80 shadow-2xl flex flex-col">
+                            <!-- Browser Header Bar -->
+                            <div class="flex items-center gap-1.5 px-3 py-2 bg-white/5 border-b border-white/5">
+                                <div class="w-1.5 h-1.5 rounded-full bg-red-500/60"></div>
+                                <div class="w-1.5 h-1.5 rounded-full bg-yellow-500/60"></div>
+                                <div class="w-1.5 h-1.5 rounded-full bg-green-500/60"></div>
+                                <span class="text-[8px] text-white/30 ml-2 font-mono truncate">ascendia13.com</span>
                             </div>
-                            <div class="text-[#68D38A]"><span class="text-[#98c379]">const</span> dashboard = () => {
+                            <!-- Image Content -->
+                            <div class="w-full flex-grow overflow-hidden relative">
+                                <img src="./imgs/ascendia13.png" alt="Ascendia 13" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700" />
                             </div>
-                            <div class="pl-4 text-white/50"><span
-                                    class="text-primary font-bold">useRealtimeMetrics</span>({</div>
-                            <div class="pl-8 text-white/40">interval: <span class="text-amber-500">1000</span>,</div>
-                            <div class="pl-8 text-white/40">onUpdate: (data) => render(data)</div>
-                            <div class="pl-4 text-white/50">});</div>
-                            <div class="text-[#68D38A]">};</div>
                         </div>
-                    </div>
-                    <!-- Footer Link -->
-                    <div class="relative z-10 flex justify-between items-center mt-auto">
-                        <span class="text-xs text-white/60">Ver Detalhes</span>
-                        <span class="material-symbols-outlined text-primary">arrow_outward</span>
                     </div>
                 </div>
 
@@ -151,53 +150,28 @@
                         <div class="flex justify-between items-start">
                             <span
                                 class="text-[10px] md:text-xs uppercase font-mono tracking-widest text-emerald-600 font-semibold">02
-                                / Oportunidade</span>
+                                / Galeria Pessoal</span>
                             <span
-                                class="text-[10px] md:text-xs px-2.5 py-1 rounded-full bg-black/5 text-black/70 border border-black/10">SaaS
-                                Platform</span>
+                                class="text-[10px] md:text-xs px-2.5 py-1 rounded-full bg-black/5 text-black/70 border border-black/10">Galeria</span>
                         </div>
-                        <h3 class="text-xl md:text-2xl font-bold mt-4 md:mt-6 text-neutral-900 leading-tight">CloudScale
-                            SaaS</h3>
-                        <p class="text-xs md:text-sm text-neutral-600 mt-2 max-w-[280px]">Landing page de alta conversão
-                            focada em escalabilidade corporativa.</p>
+                        <h3 class="text-xl md:text-2xl font-bold mt-4 md:mt-6 text-neutral-900 leading-tight">Galeria Frederico</h3>
+                        <p class="text-xs md:text-sm text-neutral-600 mt-2 max-w-[280px]">Um site galeria elegante exibindo as melhores fotos e momentos do meu cachorro Frederico.</p>
                     </div>
-                    <!-- Card Body Graphic (Visuals) -->
-                    <div class="relative z-10 my-4 flex-grow flex flex-col justify-center gap-2 md:gap-3">
-                        <div
-                            class="bg-neutral-100/80 rounded-xl p-2.5 md:p-3 border border-black/5 flex items-center justify-between shadow-sm">
-                            <div class="flex items-center gap-2 md:gap-3">
-                                <div
-                                    class="w-7 h-7 md:w-8 md:h-8 rounded-lg bg-emerald-500/10 flex items-center justify-center">
-                                    <span
-                                        class="material-symbols-outlined text-emerald-600 text-xs md:text-sm">trending_up</span>
-                                </div>
-                                <div>
-                                    <p class="text-[10px] md:text-xs font-bold text-neutral-800">Conversão Geral</p>
-                                    <p class="text-[8px] md:text-[10px] text-neutral-500">Média de 30 dias</p>
-                                </div>
+                    <!-- Card Body Graphic (Browser Mockup) -->
+                    <div class="relative z-10 my-4 flex-grow flex items-center justify-center overflow-hidden">
+                        <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden border border-black/10 bg-black/5 shadow-2xl flex flex-col">
+                            <!-- Browser Header Bar -->
+                            <div class="flex items-center gap-1.5 px-3 py-2 bg-black/5 border-b border-black/5">
+                                <div class="w-1.5 h-1.5 rounded-full bg-red-500/60"></div>
+                                <div class="w-1.5 h-1.5 rounded-full bg-yellow-500/60"></div>
+                                <div class="w-1.5 h-1.5 rounded-full bg-green-500/60"></div>
+                                <span class="text-[8px] text-black/40 ml-2 font-mono truncate">galeriafrederico.com</span>
                             </div>
-                            <span class="text-xs md:text-sm font-bold text-emerald-600">+14.2%</span>
-                        </div>
-                        <div
-                            class="bg-neutral-100/80 rounded-xl p-2.5 md:p-3 border border-black/5 flex items-center justify-between shadow-sm">
-                            <div class="flex items-center gap-2 md:gap-3">
-                                <div
-                                    class="w-7 h-7 md:w-8 md:h-8 rounded-lg bg-emerald-500/10 flex items-center justify-center">
-                                    <span
-                                        class="material-symbols-outlined text-emerald-600 text-xs md:text-sm">speed</span>
-                                </div>
-                                <div>
-                                    <p class="text-[10px] md:text-xs font-bold text-neutral-800">PageSpeed Score</p>
-                                    <p class="text-[8px] md:text-[10px] text-neutral-500">Google Lighthouse</p>
-                                </div>
+                            <!-- Image Content -->
+                            <div class="w-full flex-grow overflow-hidden relative">
+                                <img src="./imgs/frederico.png" alt="Galeria Frederico" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700" />
                             </div>
-                            <span class="text-xs md:text-sm font-bold text-neutral-800">99/100</span>
                         </div>
-                    </div>
-                    <!-- Footer Link -->
-                    <div class="relative z-10 flex justify-between items-center mt-auto">
-                        <span class="text-xs text-neutral-700 font-medium">Ver Detalhes</span>
-                        <span class="material-symbols-outlined text-emerald-600">arrow_outward</span>
                     </div>
                 </div>
 
@@ -211,39 +185,28 @@
                     <div class="relative z-10">
                         <div class="flex justify-between items-start">
                             <span class="text-[10px] md:text-xs uppercase font-mono tracking-widest text-primary">03 /
-                                Métricas</span>
+                                Barbearia</span>
                             <span
-                                class="text-[10px] md:text-xs px-2.5 py-1 rounded-full bg-white/5 text-white/70 border border-white/10">AI
-                                Logistics</span>
+                                class="text-[10px] md:text-xs px-2.5 py-1 rounded-full bg-white/5 text-white/70 border border-white/10">Agendamento</span>
                         </div>
-                        <h3 class="text-xl md:text-2xl font-bold mt-4 md:mt-6 text-white leading-tight">AI Logistics OS
-                        </h3>
-                        <p class="text-xs md:text-sm text-white/60 mt-2 max-w-[280px]">Interface inteligente de
-                            logística automatizada e integração com OpenAI.</p>
+                        <h3 class="text-xl md:text-2xl font-bold mt-4 md:mt-6 text-white leading-tight">Enzo Geralde</h3>
+                        <p class="text-xs md:text-sm text-white/60 mt-2 max-w-[280px]">Landing page moderna para barbearia com sistema integrado de agendamento de horários.</p>
                     </div>
-                    <!-- Card Body Graphic (Visuals) -->
-                    <div class="relative z-10 my-4 flex-grow flex items-center justify-between gap-3 md:gap-4">
-                        <div
-                            class="flex-1 bg-white/5 rounded-xl p-3 md:p-4 border border-white/5 text-center shadow-md">
-                            <p class="text-xl md:text-2xl font-bold text-primary font-mono">99.8%</p>
-                            <p class="text-[8px] md:text-[9px] uppercase tracking-wider text-white/40 mt-1">Uptime SLA
-                            </p>
-                        </div>
-                        <div
-                            class="flex-1 bg-white/5 rounded-xl p-3 md:p-4 border border-white/5 flex flex-col items-center justify-center shadow-md">
-                            <div
-                                class="w-7 h-7 md:w-8 md:h-8 rounded-full overflow-hidden border border-primary/40 mb-1">
-                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpGZETxyOgy3KXaiUfzhYTrmOyGHzYmyr4IVFIp5y6sQC3QqSCXnh8rECNLzAPTK-BsGwRyhPcoWuA7Thx_INbH3JR13KThWvz4mWlk9B8aKaAWWnVdhemp7blbVD8ecE-YVnn2hGxcwcqQaYhymotF9TbAuL6bjawpTrkYidTiKj4sTFOOgnRnhK3lw2lTNIoJK3Yf2_kJ8_00VhftsIP-ZVZqZt6VgbTWWWZGmRcizzRvZ8I6-FCR7jy_IfY2ErgpTuLvRFQTiQ"
-                                    alt="Alexsander Marinho" class="w-full h-full object-cover" />
+                    <!-- Card Body Graphic (Browser Mockup) -->
+                    <div class="relative z-10 my-4 flex-grow flex items-center justify-center overflow-hidden">
+                        <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden border border-white/10 bg-[#161a1a]/80 shadow-2xl flex flex-col">
+                            <!-- Browser Header Bar -->
+                            <div class="flex items-center gap-1.5 px-3 py-2 bg-white/5 border-b border-white/5">
+                                <div class="w-1.5 h-1.5 rounded-full bg-red-500/60"></div>
+                                <div class="w-1.5 h-1.5 rounded-full bg-yellow-500/60"></div>
+                                <div class="w-1.5 h-1.5 rounded-full bg-green-500/60"></div>
+                                <span class="text-[8px] text-white/30 ml-2 font-mono truncate">enzogeralde.com</span>
                             </div>
-                            <span class="text-[8px] md:text-[9px] text-white/60 font-bold">Alexsander M.</span>
-                            <span class="text-[6px] md:text-[7px] text-white/40 font-mono">Lead Dev</span>
+                            <!-- Image Content -->
+                            <div class="w-full flex-grow overflow-hidden relative">
+                                <img src="./imgs/enzogeralde.png" alt="Enzo Geralde" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700" />
+                            </div>
                         </div>
-                    </div>
-                    <!-- Footer Link -->
-                    <div class="relative z-10 flex justify-between items-center mt-auto">
-                        <span class="text-xs text-white/60">Ver Detalhes</span>
-                        <span class="material-symbols-outlined text-primary">arrow_outward</span>
                     </div>
                 </div>
 
@@ -257,27 +220,30 @@
                     <div class="relative z-10">
                         <div class="flex justify-between items-start">
                             <span class="text-[10px] md:text-xs uppercase font-mono tracking-widest text-white/80">04 /
-                                Identidade</span>
+                                Dental</span>
                             <span
-                                class="text-[10px] md:text-xs px-2.5 py-1 rounded-full bg-white/10 text-white border border-white/20">WebSockets</span>
+                                class="text-[10px] md:text-xs px-2.5 py-1 rounded-full bg-white/10 text-white border border-white/20">Clínica</span>
                         </div>
                         <h3
-                            class="text-2xl md:text-3xl font-black mt-6 md:mt-8 text-white leading-tight uppercase tracking-tight">
-                            TeamSync App</h3>
-                        <p class="text-xs md:text-sm text-white/90 mt-2 max-w-[280px] font-medium">Plataforma de
-                            colaboração em tempo real e sincronia instantânea.</p>
+                            class="text-xl md:text-2xl font-bold mt-4 md:mt-6 text-white leading-tight">
+                            Clínica Steinert</h3>
+                        <p class="text-xs md:text-sm text-white/90 mt-2 max-w-[280px] font-medium">Website profissional para clínica dentária completo com sistema de agendamento online.</p>
                     </div>
-                    <!-- Card Body Graphic (Bold Typography Focus) -->
-                    <div class="relative z-10 my-4 flex-grow flex items-center justify-center">
-                        <div
-                            class="text-center select-none font-black text-white/10 text-5xl md:text-6xl tracking-widest uppercase font-sans">
-                            SYNC
+                    <!-- Card Body Graphic (Browser Mockup) -->
+                    <div class="relative z-10 my-4 flex-grow flex items-center justify-center overflow-hidden">
+                        <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden border border-white/20 bg-white/10 shadow-2xl flex flex-col">
+                            <!-- Browser Header Bar -->
+                            <div class="flex items-center gap-1.5 px-3 py-2 bg-white/10 border-b border-white/10">
+                                <div class="w-1.5 h-1.5 rounded-full bg-red-500/80"></div>
+                                <div class="w-1.5 h-1.5 rounded-full bg-yellow-500/80"></div>
+                                <div class="w-1.5 h-1.5 rounded-full bg-green-500/80"></div>
+                                <span class="text-[8px] text-white/50 ml-2 font-mono truncate">clinicasteinert.com.br</span>
+                            </div>
+                            <!-- Image Content -->
+                            <div class="w-full flex-grow overflow-hidden relative">
+                                <img src="./imgs/steinert.png" alt="Clínica Steinert" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700" />
+                            </div>
                         </div>
-                    </div>
-                    <!-- Footer Link -->
-                    <div class="relative z-10 flex justify-between items-center mt-auto">
-                        <span class="text-xs text-white/95 font-bold">Ver Detalhes</span>
-                        <span class="material-symbols-outlined text-white">arrow_outward</span>
                     </div>
                 </div>
 
@@ -291,33 +257,29 @@
                     <div class="relative z-10">
                         <div class="flex justify-between items-start">
                             <span class="text-[10px] md:text-xs uppercase font-mono tracking-widest text-primary">05 /
-                                Performance</span>
+                                Odontologia</span>
                             <span
-                                class="text-[10px] md:text-xs px-2.5 py-1 rounded-full bg-white/5 text-white/70 border border-white/10">gRPC
-                                & Redis</span>
+                                class="text-[10px] md:text-xs px-2.5 py-1 rounded-full bg-white/5 text-white/70 border border-white/10">Dentista</span>
                         </div>
-                        <h3 class="text-xl md:text-2xl font-bold mt-4 md:mt-6 text-white leading-tight">CloudAPI Gateway
+                        <h3 class="text-xl md:text-2xl font-bold mt-4 md:mt-6 text-white leading-tight">Dr. Vinicius Gennaro
                         </h3>
-                        <p class="text-xs md:text-sm text-white/60 mt-2 max-w-[280px]">Infraestrutura de microsserviços
-                            ultra-veloz processando milhões de requisições.</p>
+                        <p class="text-xs md:text-sm text-white/60 mt-2 max-w-[280px]">Landing page de alta conversão para serviços e tratamentos odontológicos especializados.</p>
                     </div>
-                    <!-- Card Body Graphic (Microservices Visual) -->
-                    <div class="relative z-10 my-4 flex-grow flex flex-col justify-center gap-2">
-                        <div
-                            class="flex items-center justify-between bg-black/20 rounded-xl p-2.5 border border-white/5 shadow-md">
-                            <span class="text-[10px] font-mono text-white/50">Response Time</span>
-                            <span class="text-[11px] font-mono font-bold text-primary">0.8 ms</span>
+                    <!-- Card Body Graphic (Browser Mockup) -->
+                    <div class="relative z-10 my-4 flex-grow flex items-center justify-center overflow-hidden">
+                        <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden border border-white/10 bg-[#161a1a]/80 shadow-2xl flex flex-col">
+                            <!-- Browser Header Bar -->
+                            <div class="flex items-center gap-1.5 px-3 py-2 bg-white/5 border-b border-white/5">
+                                <div class="w-1.5 h-1.5 rounded-full bg-red-500/60"></div>
+                                <div class="w-1.5 h-1.5 rounded-full bg-yellow-500/60"></div>
+                                <div class="w-1.5 h-1.5 rounded-full bg-green-500/60"></div>
+                                <span class="text-[8px] text-white/30 ml-2 font-mono truncate">viniciusgennaro.com.br</span>
+                            </div>
+                            <!-- Image Content -->
+                            <div class="w-full flex-grow overflow-hidden relative">
+                                <img src="./imgs/viniciusgennaro.png" alt="Vinicius Gennaro" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700" />
+                            </div>
                         </div>
-                        <div
-                            class="flex items-center justify-between bg-black/20 rounded-xl p-2.5 border border-white/5 shadow-md">
-                            <span class="text-[10px] font-mono text-white/50">Throughput</span>
-                            <span class="text-[11px] font-mono font-bold text-white">125k req/s</span>
-                        </div>
-                    </div>
-                    <!-- Footer Link -->
-                    <div class="relative z-10 flex justify-between items-center mt-auto">
-                        <span class="text-xs text-white/60">Ver Detalhes</span>
-                        <span class="material-symbols-outlined text-primary">arrow_outward</span>
                     </div>
                 </div>
                 <!-- Prev Button -->
@@ -659,10 +621,9 @@
             <div class="p-10 glass-card rounded-2xl relative reveal">
                 <span
                     class="absolute top-6 right-8 text-primary/10 font-display-lg text-[100px] leading-none -z-10">01</span>
-                <span class="material-symbols-outlined text-primary text-4xl mb-6">psychology</span>
-                <h3 class="font-headline-sm text-headline-sm mb-4">Briefing Estratégico</h3>
-                <p class="text-on-surface-variant font-body-md">Definimos seus objetivos, público-alvo e conversão em
-                    uma call rápida e direta.</p>
+                <span class="material-symbols-outlined text-primary text-4xl mb-6">design_services</span>
+                <h3 class="font-headline-sm text-headline-sm mb-4">Design Estrutural</h3>
+                <p class="text-on-surface-variant font-body-md">Definição da estrutura visual e da arquitetura da página para garantir a melhor conversão do seu projeto.</p>
             </div>
             <div class="p-10 glass-card rounded-2xl relative border-primary/20 reveal delay-100">
                 <span
