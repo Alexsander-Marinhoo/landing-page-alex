@@ -92,10 +92,20 @@
     <!-- 4. Portfolio Section (Fanned Carousel) -->
     <section class="pt-section-gap pb-0 px-gutter w-full overflow-hidden flex flex-col items-center relative"
         id="portfolio">
-        <div class="text-center mb-12 reveal">
+        <div class="text-center mb-12 reveal flex flex-col items-center">
             <h2 class="font-headline-md text-headline-md mb-4 text-on-surface">Projetos em Destaque</h2>
             <p class="text-on-surface-variant max-w-xl mx-auto">Excelência técnica aplicada em soluções de mercado
                 reais.</p>
+            
+            <!-- Mobile Navigation Buttons -->
+            <div class="flex md:hidden justify-center items-center gap-4 mt-6">
+                <button class="prev-card-btn w-12 h-12 rounded-full border border-white/10 flex items-center justify-center bg-white/5 hover:bg-white/10 hover:border-primary/50 text-white transition-all duration-300 active:scale-90">
+                    <span class="material-symbols-outlined">arrow_back</span>
+                </button>
+                <button class="next-card-btn w-12 h-12 rounded-full border border-white/10 flex items-center justify-center bg-white/5 hover:bg-white/10 hover:border-primary/50 text-white transition-all duration-300 active:scale-90">
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                </button>
+            </div>
         </div>
 
         <!-- Stack Container -->
@@ -282,15 +292,13 @@
                         </div>
                     </div>
                 </div>
-                <!-- Prev Button -->
-                <button id="prev-card"
-                    class="absolute -left-6 md:-left-20 -top-6 md:-top-12 w-12 h-12 rounded-full border border-white/10 flex items-center justify-center bg-white/5 hover:bg-white/10 hover:border-primary/50 text-white transition-all duration-300 active:scale-90 z-50"
+                <!-- Prev Button (Desktop) -->
+                <button class="prev-card-btn absolute hidden md:flex -left-6 md:-left-20 -top-6 md:-top-12 w-12 h-12 rounded-full border border-white/10 items-center justify-center bg-white/5 hover:bg-white/10 hover:border-primary/50 text-white transition-all duration-300 active:scale-90 z-50"
                     style="transform: translate3d(0, 0, 150px);">
                     <span class="material-symbols-outlined">arrow_back</span>
                 </button>
-                <!-- Next Button -->
-                <button id="next-card"
-                    class="absolute -right-6 md:-right-20 -top-6 md:-top-12 w-12 h-12 rounded-full border border-white/10 flex items-center justify-center bg-white/5 hover:bg-white/10 hover:border-primary/50 text-white transition-all duration-300 active:scale-90 z-50"
+                <!-- Next Button (Desktop) -->
+                <button class="next-card-btn absolute hidden md:flex -right-6 md:-right-20 -top-6 md:-top-12 w-12 h-12 rounded-full border border-white/10 items-center justify-center bg-white/5 hover:bg-white/10 hover:border-primary/50 text-white transition-all duration-300 active:scale-90 z-50"
                     style="transform: translate3d(0, 0, 150px);">
                     <span class="material-symbols-outlined">arrow_forward</span>
                 </button>
@@ -668,14 +676,19 @@
                         </div>
                         <ul class="space-y-3 mb-8">
                             <li class="flex items-center gap-2 text-xs text-on-surface-variant"><span
-                                    class="material-symbols-outlined text-primary text-sm">check_circle</span> Entrega
-                                Express em 48h</li>
+                                    class="material-symbols-outlined text-primary text-sm">check_circle</span> Design profissional e responsivo</li>
                             <li class="flex items-center gap-2 text-xs text-on-surface-variant"><span
-                                    class="material-symbols-outlined text-primary text-sm">check_circle</span>
-                                Mobile-First & SEO</li>
+                                    class="material-symbols-outlined text-primary text-sm">check_circle</span> Página única, dedicada para conversão</li>
                             <li class="flex items-center gap-2 text-xs text-on-surface-variant"><span
-                                    class="material-symbols-outlined text-primary text-sm">check_circle</span> Botão de
-                                WhatsApp</li>
+                                    class="material-symbols-outlined text-primary text-sm">check_circle</span> Integração com WhatsApp</li>
+                            <li class="flex items-center gap-2 text-xs text-on-surface-variant"><span
+                                    class="material-symbols-outlined text-primary text-sm">check_circle</span> Link para redes sociais</li>
+                            <li class="flex items-center gap-2 text-xs text-on-surface-variant"><span
+                                    class="material-symbols-outlined text-primary text-sm">check_circle</span> Estrutura pronta para publicação</li>
+                            <li class="flex items-center gap-2 text-xs text-on-surface-variant"><span
+                                    class="material-symbols-outlined text-primary text-sm">check_circle</span> Navegação simples e intuitiva</li>
+                            <li class="flex items-center gap-2 text-xs text-on-surface-variant"><span
+                                    class="material-symbols-outlined text-primary text-sm">check_circle</span> Formulário atrativo de contato</li>
                         </ul>
                     </div>
                     <a href="https://ig.me/m/alexsander.code?text=Ola,%20tenho%20interesse%20em%20iniciar%20uma%20landing%20page"
@@ -706,14 +719,19 @@
                         </div>
                         <ul class="space-y-3 mb-8">
                             <li class="flex items-center gap-2 text-xs text-on-surface-variant"><span
-                                    class="material-symbols-outlined text-primary text-sm">check_circle</span> Até 5
-                                Páginas Estruturadas</li>
+                                    class="material-symbols-outlined text-primary text-sm">check_circle</span> Design profissional e responsivo</li>
                             <li class="flex items-center gap-2 text-xs text-on-surface-variant"><span
-                                    class="material-symbols-outlined text-primary text-sm">check_circle</span> Gestão de
-                                Conteúdo / Blog</li>
+                                    class="material-symbols-outlined text-primary text-sm">check_circle</span> 5 páginas, totalmente personalizadas</li>
                             <li class="flex items-center gap-2 text-xs text-on-surface-variant"><span
-                                    class="material-symbols-outlined text-primary text-sm">check_circle</span> Domínio &
-                                E-mails Profissionais</li>
+                                    class="material-symbols-outlined text-primary text-sm">check_circle</span> Integração com WhatsApp</li>
+                            <li class="flex items-center gap-2 text-xs text-on-surface-variant"><span
+                                    class="material-symbols-outlined text-primary text-sm">check_circle</span> Link para redes sociais</li>
+                            <li class="flex items-center gap-2 text-xs text-on-surface-variant"><span
+                                    class="material-symbols-outlined text-primary text-sm">check_circle</span> Estrutura pronta para publicação</li>
+                            <li class="flex items-center gap-2 text-xs text-on-surface-variant"><span
+                                    class="material-symbols-outlined text-primary text-sm">check_circle</span> Navegação simples e intuitiva</li>
+                            <li class="flex items-center gap-2 text-xs text-on-surface-variant"><span
+                                    class="material-symbols-outlined text-primary text-sm">check_circle</span> Formulário atrativo de contato</li>
                         </ul>
                     </div>
                     <a href="https://ig.me/m/alexsander.code?text=Ola,%20tenho%20interesse%20em%20iniciar%20um%20site"
@@ -738,14 +756,13 @@
                         </div>
                         <ul class="space-y-3 mb-8">
                             <li class="flex items-center gap-2 text-xs text-on-surface-variant"><span
-                                    class="material-symbols-outlined text-primary text-sm">check_circle</span>
-                                Arquitetura Cloud</li>
+                                    class="material-symbols-outlined text-primary text-sm">check_circle</span> Painel Administrativo Prático</li>
                             <li class="flex items-center gap-2 text-xs text-on-surface-variant"><span
-                                    class="material-symbols-outlined text-primary text-sm">check_circle</span>
-                                Dashboards Internos</li>
+                                    class="material-symbols-outlined text-primary text-sm">check_circle</span> Banco de Dados Integrado</li>
                             <li class="flex items-center gap-2 text-xs text-on-surface-variant"><span
-                                    class="material-symbols-outlined text-primary text-sm">check_circle</span>
-                                Integrações de API</li>
+                                    class="material-symbols-outlined text-primary text-sm">check_circle</span> Otimização de Carregamento (Performance)</li>
+                            <li class="flex items-center gap-2 text-xs text-on-surface-variant"><span
+                                    class="material-symbols-outlined text-primary text-sm">check_circle</span> Design Exclusivo e Personalizado</li>
                         </ul>
                     </div>
                     <a href="https://ig.me/m/alexsander.code?text=Ola,%20tenho%20interesse%20em%20iniciar%20um%20sistema"

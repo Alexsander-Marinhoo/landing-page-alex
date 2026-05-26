@@ -71,8 +71,8 @@ if (heroSection) {
 
 // 5. Portfolio Stack Carousel
 const cards = document.querySelectorAll('.portfolio-card') as NodeListOf<HTMLElement>;
-const nextBtn = document.getElementById('next-card');
-const prevBtn = document.getElementById('prev-card');
+const nextBtns = document.querySelectorAll('.next-card-btn');
+const prevBtns = document.querySelectorAll('.prev-card-btn');
 
 let isAnimating = false;
 let cardOrder = [0, 1, 2, 3, 4];
@@ -297,11 +297,11 @@ if (cards.length > 0) {
   updateStack();
 }
 
-if (nextBtn) {
-  nextBtn.addEventListener('click', nextCard);
-}
-if (prevBtn) {
-  prevBtn.addEventListener('click', prevCard);
-}
+nextBtns.forEach((btn) => {
+  btn.addEventListener('click', nextCard);
+});
+prevBtns.forEach((btn) => {
+  btn.addEventListener('click', prevCard);
+});
 
 
