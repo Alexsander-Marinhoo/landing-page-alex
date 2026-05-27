@@ -35,6 +35,41 @@ body {
   box-shadow: 0 0 30px rgba(104, 211, 138, 0.15);
 }
 
+/* Pricing Plan Cards without hover effects (hover disabled) */
+.plan-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.3s ease;
+}
+
+/* Featured Plan Card (Always highlighted with the "hover" styling and larger) */
+.plan-card-featured {
+  border-color: #68D38A !important;
+  box-shadow: 0 0 30px rgba(104, 211, 138, 0.25) !important;
+  z-index: 10;
+}
+
+/* Maintain entry reveal transition and styling on desktop/mobile */
+@media (min-width: 768px) {
+  .plan-card-featured.reveal {
+    transform: translateY(35px) scale(1.05);
+  }
+  .plan-card-featured.reveal-visible {
+    transform: translateY(0) scale(1.05) !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .plan-card-featured.reveal {
+    transform: translateY(35px) scale(1.02);
+  }
+  .plan-card-featured.reveal-visible {
+    transform: translateY(0) scale(1.02) !important;
+  }
+}
+
 .primary-glow {
   box-shadow: 0 0 20px rgba(104, 211, 138, 0.3);
 }
