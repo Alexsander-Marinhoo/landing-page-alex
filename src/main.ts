@@ -304,4 +304,29 @@ prevBtns.forEach((btn) => {
   btn.addEventListener('click', prevCard);
 });
 
+// 6. FAQ Accordion
+document.querySelectorAll('.faq-toggle').forEach((toggle) => {
+  toggle.addEventListener('click', () => {
+    const item = toggle.closest('.faq-item');
+    if (!item) return;
 
+    const isOpen = item.classList.contains('faq-open');
+    const content = item.querySelector('.faq-content') as HTMLElement;
+
+    // Close all FAQ items
+    document.querySelectorAll('.faq-item').forEach((faqItem) => {
+      faqItem.classList.remove('faq-open');
+      const btn = faqItem.querySelector('.faq-toggle');
+      if (btn) btn.setAttribute('aria-expanded', 'false');
+      const faqContent = faqItem.querySelector('.faq-content') as HTMLElement;
+      if (faqContent) faqContent.style.maxHeight = '0px';
+    });
+
+    // If it wasn't open, open it with dynamic height
+    if (!isOpen && content) {
+      item.classList.add('faq-open');
+      toggle.setAttribute('aria-expanded', 'true');
+      content.style.maxHeight = content.scrollHeight + 'px';
+    }
+  });
+});
