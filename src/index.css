@@ -6,13 +6,16 @@
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: #111414;
 }
+
 ::-webkit-scrollbar-thumb {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #68D38A;
 }
@@ -56,6 +59,7 @@ body {
   .plan-card-featured.reveal {
     transform: translateY(35px) scale(1.05);
   }
+
   .plan-card-featured.reveal-visible {
     transform: translateY(0) scale(1.05) !important;
   }
@@ -65,6 +69,7 @@ body {
   .plan-card-featured.reveal {
     transform: translateY(35px) scale(1.02);
   }
+
   .plan-card-featured.reveal-visible {
     transform: translateY(0) scale(1.02) !important;
   }
@@ -89,9 +94,9 @@ body {
   backface-visibility: hidden;
   will-change: transform, opacity;
   box-shadow: 0 25px 65px -15px rgba(0, 0, 0, 0.5);
-  transition: transform 0.75s cubic-bezier(0.25, 1, 0.5, 1), 
-              opacity 0.75s cubic-bezier(0.25, 1, 0.5, 1), 
-              box-shadow 0.75s ease;
+  transition: transform 0.75s cubic-bezier(0.25, 1, 0.5, 1),
+    opacity 0.75s cubic-bezier(0.25, 1, 0.5, 1),
+    box-shadow 0.75s ease;
 }
 
 .material-symbols-outlined {
@@ -103,28 +108,28 @@ body {
   opacity: 0;
   transform: translateY(35px);
   transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .reveal-left {
   opacity: 0;
   transform: translateX(-40px);
   transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .reveal-right {
   opacity: 0;
   transform: translateX(40px);
   transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .reveal-scale {
   opacity: 0;
   transform: scale(0.95);
   transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .reveal-visible {
@@ -133,14 +138,29 @@ body {
 }
 
 /* Custom micro-delays for grid items and children animations */
-.delay-100 { transition-delay: 100ms; }
-.delay-200 { transition-delay: 200ms; }
-.delay-300 { transition-delay: 300ms; }
-.delay-400 { transition-delay: 400ms; }
-.delay-500 { transition-delay: 500ms; }
+.delay-100 {
+  transition-delay: 100ms;
+}
+
+.delay-200 {
+  transition-delay: 200ms;
+}
+
+.delay-300 {
+  transition-delay: 300ms;
+}
+
+.delay-400 {
+  transition-delay: 400ms;
+}
+
+.delay-500 {
+  transition-delay: 500ms;
+}
 
 /* Lenis Support Styles */
-html.lenis, html.lenis body {
+html.lenis,
+html.lenis body {
   height: auto;
 }
 
@@ -162,7 +182,11 @@ html.lenis, html.lenis body {
 
 /* Fallback for reduced motion */
 @media (prefers-reduced-motion: reduce) {
-  .reveal, .reveal-left, .reveal-right, .reveal-scale {
+
+  .reveal,
+  .reveal-left,
+  .reveal-right,
+  .reveal-scale {
     opacity: 1 !important;
     transform: none !important;
     transition: none !important;
@@ -174,6 +198,7 @@ html.lenis, html.lenis body {
   0% {
     transform: translate3d(0, 0, 0);
   }
+
   100% {
     transform: translate3d(-50%, 0, 0);
   }
@@ -183,6 +208,7 @@ html.lenis, html.lenis body {
   0% {
     transform: translate3d(-50%, 0, 0);
   }
+
   100% {
     transform: translate3d(0, 0, 0);
   }
@@ -230,21 +256,21 @@ html.lenis, html.lenis body {
   overflow: hidden;
   opacity: 0;
   transition: max-height 0.45s cubic-bezier(0.16, 1, 0.3, 1),
-              opacity 0.35s ease;
+    opacity 0.35s ease;
 }
 
 .faq-item.faq-open .faq-content {
   opacity: 1;
   transition: max-height 0.5s cubic-bezier(0.16, 1, 0.3, 1),
-              opacity 0.4s ease 0.1s;
+    opacity 0.4s ease 0.1s;
 }
 
-.faq-content > div {
+.faq-content>div {
   transform: translateY(-8px);
   transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.faq-item.faq-open .faq-content > div {
+.faq-item.faq-open .faq-content>div {
   transform: translateY(0);
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0.1s;
 }
