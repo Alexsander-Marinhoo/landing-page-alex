@@ -75,7 +75,7 @@ const nextBtns = document.querySelectorAll('.next-card-btn');
 const prevBtns = document.querySelectorAll('.prev-card-btn');
 
 let isAnimating = false;
-let cardOrder = [0, 1, 2, 3, 4];
+let cardOrder = Array.from({ length: cards.length }, (_, i) => i);
 
 function updateStack() {
   const width = window.innerWidth;
@@ -95,12 +95,13 @@ function updateStack() {
     const idx = parseInt(card.getAttribute('data-index') || '0', 10);
     const posInOrder = cardOrder.indexOf(idx);
 
+    const half = Math.floor(cards.length / 2);
     let pos = 0;
-    if (posInOrder === 0) pos = 0;
-    else if (posInOrder === 1) pos = 1;
-    else if (posInOrder === 2) pos = 2;
-    else if (posInOrder === 3) pos = -2;
-    else if (posInOrder === 4) pos = -1;
+    if (posInOrder <= half) {
+      pos = posInOrder;
+    } else {
+      pos = posInOrder - cards.length;
+    }
 
     let tx = 0;
     let ty = 0;
@@ -154,6 +155,15 @@ function updateStack() {
       rz = -12 * scaleR;
       zIndex = 20;
       opacity = 0.65;
+      card.style.pointerEvents = 'none';
+    } else {
+      tx = pos > 0 ? 800 * scaleX : -800 * scaleX;
+      ty = isMobile ? 100 * scaleY : 200;
+      tz = -400 * scaleZ;
+      ry = pos > 0 ? -45 * scaleR : 45 * scaleR;
+      rz = pos > 0 ? 18 * scaleR : -18 * scaleR;
+      zIndex = 10;
+      opacity = 0;
       card.style.pointerEvents = 'none';
     }
 
@@ -271,12 +281,13 @@ cards.forEach((card) => {
     const idx = parseInt(card.getAttribute('data-index') || '0', 10);
     const posInOrder = cardOrder.indexOf(idx);
     
+    const half = Math.floor(cards.length / 2);
     let pos = 0;
-    if (posInOrder === 0) pos = 0;
-    else if (posInOrder === 1) pos = 1;
-    else if (posInOrder === 2) pos = 2;
-    else if (posInOrder === 3) pos = -2;
-    else if (posInOrder === 4) pos = -1;
+    if (posInOrder <= half) {
+      pos = posInOrder;
+    } else {
+      pos = posInOrder - cards.length;
+    }
 
     if (pos === 1) {
       nextCard();

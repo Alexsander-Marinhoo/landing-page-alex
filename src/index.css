@@ -83,12 +83,15 @@ body {
 
 .portfolio-card {
   transform-style: preserve-3d;
-  backface-visibility: hidden;
-  will-change: transform, opacity;
   box-shadow: 0 25px 65px -15px rgba(0, 0, 0, 0.5);
   transition: transform 0.75s cubic-bezier(0.25, 1, 0.5, 1),
     opacity 0.75s cubic-bezier(0.25, 1, 0.5, 1),
     box-shadow 0.75s ease;
+  
+  /* Fix text/content blurriness under 3D transforms */
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
+  backface-visibility: visible;
 }
 
 .material-symbols-outlined {
