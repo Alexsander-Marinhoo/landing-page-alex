@@ -54,24 +54,16 @@ body {
   z-index: 10;
 }
 
-/* Maintain entry reveal transition and styling on desktop/mobile */
+/* Featured plan card scaling (no reveal animation) */
 @media (min-width: 768px) {
-  .plan-card-featured.reveal {
-    transform: translateY(35px) scale(1.05);
-  }
-
-  .plan-card-featured.reveal-visible {
-    transform: translateY(0) scale(1.05) !important;
+  .plan-card-featured {
+    transform: scale(1.05);
   }
 }
 
 @media (max-width: 767px) {
-  .plan-card-featured.reveal {
-    transform: translateY(35px) scale(1.02);
-  }
-
-  .plan-card-featured.reveal-visible {
-    transform: translateY(0) scale(1.02) !important;
+  .plan-card-featured {
+    transform: scale(1.02);
   }
 }
 
@@ -103,59 +95,23 @@ body {
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 }
 
-/* IntersectionObserver Reveal Animations */
-.reveal {
-  opacity: 0;
-  transform: translateY(35px);
-  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.reveal-left {
-  opacity: 0;
-  transform: translateX(-40px);
-  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.reveal-right {
-  opacity: 0;
-  transform: translateX(40px);
-  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.reveal-scale {
-  opacity: 0;
-  transform: scale(0.95);
-  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
+/* Reveal animations disabled - elements visible immediately */
+.reveal,
+.reveal-left,
+.reveal-right,
+.reveal-scale,
 .reveal-visible {
   opacity: 1 !important;
-  transform: translate(0) scale(1) !important;
+  transform: none !important;
 }
 
-/* Custom micro-delays for grid items and children animations */
-.delay-100 {
-  transition-delay: 100ms;
-}
-
-.delay-200 {
-  transition-delay: 200ms;
-}
-
-.delay-300 {
-  transition-delay: 300ms;
-}
-
-.delay-400 {
-  transition-delay: 400ms;
-}
-
+/* Delay classes neutralized */
+.delay-100,
+.delay-200,
+.delay-300,
+.delay-400,
 .delay-500 {
-  transition-delay: 500ms;
+  transition-delay: 0ms;
 }
 
 /* Lenis Support Styles */
